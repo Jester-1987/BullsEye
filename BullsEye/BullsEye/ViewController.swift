@@ -16,12 +16,12 @@ class ViewController: UIViewController {
 
     @IBAction func showAlert(){
         let alert = UIAlertController(
-            title: "Hello, World",
-            message: "This is my first app!",
+            title: "Hello, World", // shows title on popup
+            message: "This is my first app!", // main popup text
             preferredStyle: .alert)
         
         let action = UIAlertAction(
-            title: "Awesome",
+            title: "Awesome", // action button text
             style: .default,
             handler: nil)
         
