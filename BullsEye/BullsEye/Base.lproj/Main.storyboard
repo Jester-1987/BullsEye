@@ -42,6 +42,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ew7-Gw-s6o">
                                 <rect key="frame" x="178" y="120" width="459" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="o1y-4x-Tos"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJq-YX-Eow">
                                 <rect key="frame" x="164" y="124" width="8" height="21"/>
@@ -100,6 +103,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="roundLabel" destination="9y7-Ng-Vqh" id="tKV-10-SH0"/>
+                        <outlet property="scoreLabel" destination="nBf-R3-boZ" id="Koj-QB-BiL"/>
+                        <outlet property="slider" destination="ew7-Gw-s6o" id="X6e-6s-dUs"/>
+                        <outlet property="targetLabel" destination="cCh-SN-IgV" id="sfr-NY-Awt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
