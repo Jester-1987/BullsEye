@@ -56,10 +56,9 @@ class ViewController: UIViewController {
         
         let action = UIAlertAction(
             title: "OK", // action button text
-            style: .default,
-            handler: { _ in
-                self.startNewRound()
-            })
+            style: .default) { _ in
+                self.startNewRound() // syntastic sugar added 
+            }
         
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
