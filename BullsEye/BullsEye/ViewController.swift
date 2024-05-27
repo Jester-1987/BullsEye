@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        startNewRound()
+        startNewGame() // changed from startNewRound to startNewGame
     }
 
     @IBAction func showAlert(){
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         let action = UIAlertAction(
             title: "OK", // action button text
             style: .default) { _ in
-                self.startNewRound() // syntastic sugar added 
+                self.startNewRound() // syntastic sugar added
             }
         
         alert.addAction(action)
@@ -66,6 +66,12 @@ class ViewController: UIViewController {
     
     @IBAction func sliderMoved(_ slider: UISlider) {
         currentValue = lroundf(slider.value)
+    }
+    
+    @IBAction func startNewGame(){
+        score = 0
+        round = 0 // starts at round 1
+        startNewRound()
     }
     
     func startNewRound() {
